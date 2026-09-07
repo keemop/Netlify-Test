@@ -1,12 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello World Example</title>
-  </head>
-  <body>
-    <b>Hello World</b>
-    <p>Hello World</p>
-  </body>
+    <title>OS Optimization Hub</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>System Optimization Hub</h1>
+        <p class="subtitle">Select your operating system to access performance guides</p>
+        <div class="os-logos-header">
+            <span>🪟 Windows</span>
+            <span>🐧 Linux</span>
+            <span>🍎 macOS</span>
+            <span>🤖 Android</span>
+        </div>
+    </header>
+
+    <div class="grid-container">
+        <!-- Auto Detect Button -->
+        <div class="card card-auto" onclick="autoDetectOS()">
+            <h2>⚡ Automatic OS Detection</h2>
+            <p>Scan system to route automatically</p>
+        </div>
+
+        <!-- Windows Option -->
+        <div class="card">
+            <h2>🪟 Windows</h2>
+            <p>Select your version</p>
+            <div class="sub-menu" id="win-menu">
+                <a href="pages/win10.html" class="btn">Windows 10</a>
+                <a href="pages/win11.html" class="btn">Windows 11</a>
+            </div>
+        </div>
+
+        <!-- Linux Option -->
+        <div class="card">
+            <h2>🐧 Linux</h2>
+            <p>Select your distribution</p>
+            <div class="sub-menu" id="linux-menu">
+                <a href="pages/ubuntu.html" class="btn">Ubuntu</a>
+                <a href="pages/mint.html" class="btn">Linux Mint</a>
+            </div>
+        </div>
+
+        <!-- macOS Option -->
+        <div class="card">
+            <h2>🍎 macOS</h2>
+            <p>Select your version</p>
+            <div class="sub-menu" id="mac-menu">
+                <a href="pages/mac.html" class="btn">macOS Latest</a>
+            </div>
+        </div>
+
+        <!-- Android Option -->
+        <div class="card" onclick="window.location.href='pages/android.html'">
+            <h2>🤖 Android</h2>
+            <p>Universal optimization guide</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
 </html>
